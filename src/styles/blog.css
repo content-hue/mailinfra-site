@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.wp-content { color: #374151; }
+.wp-content p { font-size: 19px; line-height: 1.75; margin-bottom: 1.5rem; }
+.wp-content h1 { font-size: 2.25rem; font-weight: 700; color: #111827; margin-top: 3rem; margin-bottom: 1.5rem; line-height: 1.2; }
+.wp-content h2 { font-size: 1.875rem; font-weight: 700; color: #111827; margin-top: 3rem; margin-bottom: 1.25rem; line-height: 1.2; }
+.wp-content h3 { font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2rem; margin-bottom: 1rem; }
+.wp-content h4 { font-size: 1.25rem; font-weight: 700; color: #111827; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+.wp-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.wp-content ol { list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.wp-content li { font-size: 19px; line-height: 1.75; margin-bottom: 0.5rem; }
+.wp-content a { color: #1d4ed8; text-decoration: underline; }
+.wp-content a:hover { color: #1e40af; }
+.wp-content strong { font-weight: 600; color: #111827; }
+.wp-content em { font-style: italic; }
+.wp-content blockquote {
+  border-left: 4px solid #2563eb;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin: 2rem 0;
+  color: #374151;
+  font-style: italic;
+  background: #f9fafb;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.wp-content code {
+  padding: 0.15em 0.45em;
+  background: #f3f4f6;
+  color: #1f2937;
+  border-radius: 4px;
+  font-size: 17px;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+.wp-content pre {
+  background: #111827;
+  color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+.wp-content pre code {
+  background: transparent;
+  color: #f3f4f6;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.wp-content img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.wp-content table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+.wp-content th { padding: 0.75rem 1rem; font-weight: 600; color: #111827; border: 1px solid #d1d5db; background: #f3f4f6; }
+.wp-content td { padding: 0.75rem 1rem; border: 1px solid #d1d5db; font-size: 17px; }
+.wp-content tbody tr:nth-child(even) { background: #f9fafb; }
+.wp-content hr { border: none; border-top: 1px solid #d1d5db; margin: 3rem 0; }
+/* Force all WordPress images to full width */
+.wp-content img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+
+.wp-content figure {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.wp-content figure img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* WordPress alignment classes */
+.wp-content .aligncenter,
+.wp-content .alignleft,
+.wp-content .alignright,
+.wp-content .alignfull,
+.wp-content .alignwide {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* WordPress block image */
+.wp-content .wp-block-image {
+  width: 100% !important;
+}
+
+.wp-content .wp-block-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+/* Fix WordPress inline width styles on images */
+.wp-content figure,
+.wp-content figure img,
+.wp-content .wp-block-image,
+.wp-content .wp-block-image img,
+.wp-content div img,
+.wp-content p img,
+.wp-content img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+.wp-content figure,
+.wp-content .wp-block-image {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
