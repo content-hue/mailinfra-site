@@ -54,7 +54,7 @@ function CategorySection({ categories }) {
     /* @__PURE__ */ jsx("div", { className: "flex items-center gap-4 flex-wrap", children: categories.map((category) => /* @__PURE__ */ jsx(
       "a",
       {
-        href: `/category/${category.slug}`,
+        href: `/blog/category/${category.slug}`,
         className: "px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 text-sm font-semibold rounded-full transition-colors",
         children: category.name
       },

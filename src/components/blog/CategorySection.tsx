@@ -3,7 +3,6 @@ import type { WordPressCategory } from '../../lib/wordpress';
 interface CategorySectionProps {
   categories: WordPressCategory[];
 }
-
 export function CategorySection({ categories }: CategorySectionProps) {
   if (categories.length === 0) return null;
 
@@ -14,7 +13,7 @@ export function CategorySection({ categories }: CategorySectionProps) {
         {categories.map((category) => (
           <a
             key={category.id}
-            href={`/category/${category.slug}`}
+            href={`/blog/category/${category.slug}`}
             className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 text-sm font-semibold rounded-full transition-colors"
           >
             {category.name}
