@@ -8,7 +8,7 @@ import { ArticleCard } from './ArticleCard';
 import { EmptyState } from './EmptyState';
 import { getCategory } from '../../lib/wordpress';
 
-export default function CategoryPage({ slug }: { slug: string }) {
+export function CategoryPage({ slug }: { slug: string }) {
   const [posts, setPosts] = useState<WordPressPost[]>([]);
   const [category, setCategory] = useState<WordPressCategory | null>(null);
   const [categories, setCategories] = useState<WordPressCategory[]>([]);
