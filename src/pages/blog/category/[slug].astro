@@ -3,16 +3,6 @@ export const prerender = false;
 import { CategoryPage } from "../../../components/blog/CategoryPage.tsx";
 import "../../../styles/blog.css";
 
-export async function getStaticPaths() {
-  const response = await fetch('https://cms.mailinfra.co/wp-json/wp/v2/categories');
-  const categories = await response.json();
-  return categories
-    .filter((cat: any) => cat.slug !== 'uncategorized')
-    .map((cat: any) => ({
-      params: { slug: cat.slug }
-    }));
-}
-
 const { slug } = Astro.params;
 ---
 <html lang="en">

@@ -116,7 +116,6 @@ function BlogIndexPage() {
   ] });
 }
 
-const prerender = false;
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`<html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mailinfra Blog</title>${renderHead()}</head> <body> ${renderComponent($$result, "BlogIndexPage", BlogIndexPage, { "client:load": true, "client:component-hydration": "load", "client:component-path": "C:/Users/TAHIR KUN/mailinfra-site/src/components/blog/BlogIndexPage.tsx", "client:component-export": "default" })} </body></html>`;
 }, "C:/Users/TAHIR KUN/mailinfra-site/src/pages/blog/index.astro", void 0);
@@ -128,7 +127,6 @@ const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: $$Index,
   file: $$file,
-  prerender,
   url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 

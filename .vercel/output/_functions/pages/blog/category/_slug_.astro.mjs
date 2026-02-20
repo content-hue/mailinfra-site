@@ -84,14 +84,7 @@ function CategoryPage({ slug }) {
 
 const $$Astro = createAstro("https://mailinfra.co");
 const prerender = false;
-async function getStaticPaths() {
-  const response = await fetch("https://cms.mailinfra.co/wp-json/wp/v2/categories");
-  const categories = await response.json();
-  return categories.filter((cat) => cat.slug !== "uncategorized").map((cat) => ({
-    params: { slug: cat.slug }
-  }));
-}
-const $$slug = createComponent(async ($$result, $$props, $$slots) => {
+const $$slug = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$slug;
   const { slug } = Astro2.params;
@@ -105,7 +98,6 @@ const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: $$slug,
   file: $$file,
-  getStaticPaths,
   prerender,
   url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
