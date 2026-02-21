@@ -31,24 +31,28 @@ export default function BlogIndexPage() {
     <div className="min-h-screen bg-gray-50" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
       <BlogHeader />
       <SEOHead
-  title="Mailinfra Blog | Infrastructure Insights for Modern Email Teams"
-  description="Deep technical guides on deliverability, SMTP, scaling cold email infrastructure, and building reliable outbound systems."
-  canonicalUrl="https://blog.mailinfra.co/"
-  ogType="website"
-/>
-<WebsiteSchema
-  name="Mailinfra Blog"
-  url="https://blog.mailinfra.co/"
-  description="Infrastructure Insights for Modern Email Teams"
-  publisher={{ name: 'Mailinfra', logo: 'https://mailinfra.co/logo.png' }}
-/>
+        title="Mailinfra Blog | Infrastructure Insights for Modern Email Teams"
+        description="Deep technical guides on deliverability, SMTP, scaling cold email infrastructure, and building reliable outbound systems."
+        canonicalUrl="https://blog.mailinfra.co/"
+        ogType="website"
+      />
+      <WebsiteSchema
+        name="Mailinfra Blog"
+        url="https://blog.mailinfra.co/"
+        description="Infrastructure Insights for Modern Email Teams"
+        publisher={{ name: 'Mailinfra', logo: 'https://mailinfra.co/logo.png' }}
+      />
       <main>
         <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6 py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24">
             <div className="max-w-3xl">
-              <h1 className="text-6xl font-bold text-white leading-tight mb-6">The Mailinfra Blog</h1>
-              <p className="text-2xl text-blue-100 font-medium mb-3">Infrastructure Insights for Modern Email Teams</p>
-              <p className="text-lg text-blue-200 leading-relaxed">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
+                The Mailinfra Blog
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl text-blue-100 font-medium mb-2 sm:mb-3">
+                Infrastructure Insights for Modern Email Teams
+              </p>
+              <p className="text-base sm:text-lg text-blue-200 leading-relaxed">
                 Deep technical guides on deliverability, SMTP, scaling cold email infrastructure, and building reliable outbound systems.
               </p>
             </div>
@@ -56,7 +60,7 @@ export default function BlogIndexPage() {
         </section>
 
         {loading ? (
-          <div className="max-w-7xl mx-auto px-6 py-16 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 text-center">
             <p className="text-gray-600">Loading articles...</p>
           </div>
         ) : (
