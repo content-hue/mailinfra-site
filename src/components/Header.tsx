@@ -18,6 +18,7 @@ const Header = () => {
   const navItems = [
     { label: "Features", href: "#features" },
     { label: "Pricing", href: "#pricing" },
+    { label: "Blog", href: "/blog" },
   ];
 
   return (
@@ -34,7 +35,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-14 md:h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 md:gap-3 group">
+          <a href="/" className="flex items-center gap-2 md:gap-3 group">
             <Mail className={`w-6 h-6 md:w-8 md:h-8 ${isScrolled ? "text-[#0000FF]" : "text-white"} group-hover:scale-110 transition-transform`} strokeWidth={2} />
             <span className={`text-xl md:text-2xl font-bold tracking-tight ${isScrolled ? "text-[#1A1A1A]" : "text-white"}`}>
               Mailinfra
@@ -44,7 +45,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             {navItems.map((item) => (
-              <a
+              
                 key={item.label}
                 href={item.href}
                 className={`font-medium transition-colors text-sm lg:text-base ${
@@ -89,7 +90,7 @@ const Header = () => {
           >
             <nav className="container mx-auto px-4 py-4 flex flex-col gap-2">
               {navItems.map((item) => (
-                <a
+                
                   key={item.label}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}

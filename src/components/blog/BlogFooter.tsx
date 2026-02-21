@@ -15,26 +15,18 @@ export function BlogFooter() {
             <ul className="space-y-2 sm:space-y-3">
               <li><a href="https://mailinfra.co/#features" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Features</a></li>
               <li><a href="https://mailinfra.co/#pricing" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="https://mailinfra.co/docs" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Documentation</a></li>
-              <li><a href="https://mailinfra.co/api" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">API Reference</a></li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm sm:text-base font-semibold text-white mb-4 sm:mb-5">Resources</h4>
             <ul className="space-y-2 sm:space-y-3">
               <li><a href="/blog" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Guides</a></li>
-              <li><a href="#" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
-              <li><a href="#" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Support</a></li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm sm:text-base font-semibold text-white mb-4 sm:mb-5">Company</h4>
             <ul className="space-y-2 sm:space-y-3">
-              <li><a href="https://mailinfra.co/about" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">About Us</a></li>
               <li><a href="https://mailinfra.co/contact" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="https://mailinfra.co/terms" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="https://mailinfra.co/privacy" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
         </div>

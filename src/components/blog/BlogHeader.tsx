@@ -19,6 +19,9 @@ export function BlogHeader() {
           <a href="https://mailinfra.co/#pricing" className="text-sm font-medium text-white hover:text-gray-100 transition-colors">
             Pricing
           </a>
+          <a href="/blog" className="text-sm font-medium text-white hover:text-gray-100 transition-colors">
+            Blog
+          </a>
           <a href="https://mailinfra.co/trial"
             className="px-4 lg:px-6 py-2 lg:py-3 bg-yellow-400 hover:bg-yellow-500 text-gray-900 text-sm font-semibold rounded-lg transition-all shadow-md hover:shadow-lg">
             Start Free Trial →
@@ -44,6 +47,9 @@ export function BlogHeader() {
             </a>
             <a href="https://mailinfra.co/#pricing" className="text-sm font-medium text-white hover:text-gray-100 transition-colors py-2">
               Pricing
+            </a>
+            <a href="/blog" className="text-sm font-medium text-white hover:text-gray-100 transition-colors py-2">
+              Blog
             </a>
             <a href="https://mailinfra.co/trial"
               className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-gray-900 text-sm font-semibold rounded-lg transition-all shadow-md text-center">
