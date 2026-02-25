@@ -1,0 +1,10 @@
+[33mb658e4d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Ignore old React component files
+[33ma1a8413[m Remove 404 page temporarily
+[33m61766e1[m Update headers and footers with /blog link, clean up dead links, add 404 page
+[33m7114049[m Update headers and footers with /blog link, clean up dead links, add 404 page
+[33m50f20bc[m Add mobile responsive header, hero, newsletter, footer
+[33m4759ab5[m Remove .vercel folder
+[33mbc4c89c[m Bust cache
+[33me4f0507[m Fix all astro pages for server mode
+[33m6ca7a20[m Fix Vercel adapter configuration
+[33mbf2cebe[m Fix blog post routing

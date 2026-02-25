@@ -18,6 +18,7 @@ const Header = () => {
   const navItems = [
     { label: "Features", href: "#features" },
     { label: "Pricing", href: "#pricing" },
+    { label: "Blog", href: "/blog" },
   ];
 
   return (
@@ -34,7 +35,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-14 md:h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 md:gap-3 group">
+          <a href="/" className="flex items-center gap-2 md:gap-3 group">
             <Mail className={`w-6 h-6 md:w-8 md:h-8 ${isScrolled ? "text-[#0000FF]" : "text-white"} group-hover:scale-110 transition-transform`} strokeWidth={2} />
             <span className={`text-xl md:text-2xl font-bold tracking-tight ${isScrolled ? "text-[#1A1A1A]" : "text-white"}`}>
               Mailinfra
