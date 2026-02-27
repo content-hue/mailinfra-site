@@ -3,7 +3,7 @@ import { Mail } from 'lucide-react';
 export function BlogNewsletter() {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
-      <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-xl">
+      <div className="rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-xl" style={{ background: '#0000FF' }}>
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex justify-center mb-4 sm:mb-6">
             <Mail className="text-yellow-400" size={36} />
@@ -18,7 +18,7 @@ export function BlogNewsletter() {
             <input
               type="email"
               placeholder="your@email.com"
-              className="flex-1 px-4 sm:px-5 py-3 sm:py-3.5 rounded-lg border-2 border-blue-600 focus:outline-none focus:border-blue-400 transition-colors text-sm bg-white"
+              className="flex-1 px-4 sm:px-5 py-3 sm:py-3.5 rounded-lg border-2 border-blue-400 focus:outline-none focus:border-white transition-colors text-sm bg-white"
             />
             <button
               type="button"

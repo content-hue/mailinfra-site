@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { fetchPostBySlug, fetchPosts, getAuthorName, getCategory, getFeaturedImage } from '../../lib/wordpress';
 import type { WordPressPost } from '../../lib/wordpress';
-import { BlogHeader } from './BlogHeader';
+import Header from '../Header';
 import { BlogFooter } from './BlogFooter';
 import { HeroBand } from './HeroBand';
 import { ArticleContent } from './ArticleContent';
@@ -40,7 +40,7 @@ export default function BlogPostPageComponent({ slug }: { slug: string }) {
   if (loading) {
     return (
       <div className="min-h-screen bg-white" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
-        <BlogHeader />
+        <Header />
         <div className="flex items-center justify-center py-32">
           <p className="text-gray-600">Loading article...</p>
         </div>
@@ -51,7 +51,7 @@ export default function BlogPostPageComponent({ slug }: { slug: string }) {
   if (!post) {
     return (
       <div className="min-h-screen bg-white" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
-        <BlogHeader />
+        <Header />
         <div className="max-w-7xl mx-auto px-6 py-32 text-center">
           <p className="text-gray-600 mb-4">Article not found.</p>
           <a href="/blog" className="text-blue-700 underline">← Back to blog</a>
@@ -102,7 +102,7 @@ export default function BlogPostPageComponent({ slug }: { slug: string }) {
         className="fixed top-0 left-0 h-1 bg-yellow-400 z-50 transition-all duration-100"
         style={{ width: `${scrollProgress}%` }}
       />
-      <BlogHeader />
+      <Header />
       <HeroBand post={post} />
       <main className="bg-white">
         <ArticleContent post={post} relatedPosts={relatedPosts} />

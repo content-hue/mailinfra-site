@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { fetchCategories, fetchPosts } from '../../lib/wordpress';
 import type { WordPressPost, WordPressCategory } from '../../lib/wordpress';
-import { BlogHeader } from './BlogHeader';
+import Header from '../Header';
 import { BlogFooter } from './BlogFooter';
 import { BlogNewsletter } from './BlogNewsletter';
 import { ArticleCard } from './ArticleCard';
@@ -32,7 +32,7 @@ export function CategoryPage({ slug }: { slug: string }) {
 
   return (
     <div className="min-h-screen bg-gray-50" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
-      <BlogHeader />
+      <Header />
 
       {/* Category Hero */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 overflow-hidden">

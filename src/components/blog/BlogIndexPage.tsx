@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { fetchPosts, fetchCategories } from '../../lib/wordpress';
 import type { WordPressPost, WordPressCategory } from '../../lib/wordpress';
-import { BlogHeader } from './BlogHeader';
+import Header from '../Header';
 import { BlogFooter } from './BlogFooter';
 import { BlogNewsletter } from './BlogNewsletter';
 import { FeaturedArticle } from './FeaturedArticle';
@@ -29,7 +29,7 @@ export default function BlogIndexPage() {
 
   return (
     <div className="min-h-screen bg-gray-50" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
-      <BlogHeader />
+      <Header />
       <SEOHead
         title="Mailinfra Blog | Infrastructure Insights for Modern Email Teams"
         description="Deep technical guides on deliverability, SMTP, scaling cold email infrastructure, and building reliable outbound systems."
